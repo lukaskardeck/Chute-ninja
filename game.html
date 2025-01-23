@@ -7,7 +7,26 @@
         <title>Chute Ninja</title>
     </head>
     <body>
-        <h1>Game</h1>
+        <div class="container-principal">
+            <div class="container-conteudo">
+                <div class="container-info">
+                    <h1>Chute Ninja</h1>
+                    <div class="container-campos">
+                        <p>Escolha um número entre 1 e 10</p>
+                        <input type="number" name="chute-jogador" id="chute-jogador" min="1" max="10">
+                        <div class="container-botoes">
+                            <button class="btn-chutar">Chutar</button>
+                            <button class="btn-novo-jogo">Novo Jogo</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-imagem">
+                    <img src="./assets/img/inicio.png" alt="">
+                </div>
+            </div>
+        </div>
+
         <script src="./js/game.js"></script>
     </body>
 </html>

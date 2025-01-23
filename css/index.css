@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chakra Petch", serif;
+    color: #fff;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #f09213, #9c4e00);
+}
+
+.container-principal {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-titulo h1 {
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.container-titulo h2 {
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.container-imagem {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-novo-jogo button{
+    width: 400px;
+    font-size: 40px;
+    padding: 8px;
+    color: #f72604;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 16px;
+}

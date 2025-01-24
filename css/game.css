@@ -89,6 +89,7 @@ button.btn-chutar {
 }
 
 button.btn-novo-jogo {
+    display: none;
     background-color: #fD7e4e;
 }
 

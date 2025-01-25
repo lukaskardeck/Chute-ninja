@@ -54,10 +54,32 @@ body {
 .container-novo-jogo button{
     width: 400px;
     font-size: 40px;
+    font-weight: bold;
     padding: 8px;
     color: #f72604;
     background-color: #fff;
     border: none;
     cursor: pointer;
     border-radius: 16px;
+}
+
+@media (max-width: 600px) {
+    .container-titulo h1 {
+        font-size: 64px;
+    }
+
+    .container-titulo h2 {
+        font-size: 28px;
+    }
+
+    .container-imagem {
+        width: 350px;
+        height: 350px;
+    }
+
+    .container-novo-jogo button {
+        width: 300px;
+        font-size: 28px;
+        margin-top: 24px;
+    }
 }

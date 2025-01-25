@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&family=Montserrat:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&family=Montserrat:ital@0;1&display=swap");
 
 * {
     margin: 0;
@@ -15,7 +15,7 @@ body {
 
 .container-principal {
     height: 100%;
-    padding: 80px 128px;
+    padding: 40px 64px;
 }
 
 .container-conteudo {
@@ -37,15 +37,15 @@ body {
     flex: 1;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 64px;
 }
 
 .container-info h1 {
     font-family: "Chakra Petch", serif;
     font-weight: bold;
-    font-size: 80px;
+    font-size: 64px;
     width: 100%;
-    margin-top: 24px;
 }
 
 .container-campos {
@@ -56,7 +56,7 @@ body {
 }
 
 .container-campos p {
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .container-campos input {
@@ -90,7 +90,7 @@ button.btn-chutar {
 
 button.btn-novo-jogo {
     display: none;
-    background-color: #fD7e4e;
+    background-color: #fd7e4e;
 }
 
 .container-imagem {
@@ -102,6 +102,66 @@ button.btn-novo-jogo {
 }
 
 .container-imagem img {
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
+}
+
+@media (max-width: 1000px) {
+    .container-conteudo {
+        padding: 24px;
+    }
+
+    .container-imagem {
+        width: 40%;
+        height: 80%;
+    }    
+}
+
+@media (max-width: 725px) {
+    .container-conteudo {
+        padding: 12px;
+    }
+
+    .container-imagem img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 625px) {
+    .container-conteudo {
+        flex-direction: column-reverse; /* Empilha os elementos */
+        padding: 1rem;
+        gap: 24px;
+    }
+
+    .container-info {
+        flex: 2;
+        justify-content: start;
+        gap: 8px;
+    }
+
+    .container-info h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .container-campos p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .container-campos input {
+        font-size: 24px;
+        padding: 8px 16px;
+    }
+
+    .container-imagem {
+        align-items: end;
+    }
+
+    .container-imagem img {
+        width: 250px;
+        height: 250px;
+    }
 }
